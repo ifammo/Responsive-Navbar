@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbadr</title>
+    <script src="main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav> 
+        <div class="flex items-center px-5 justify-between py-2">
+            <p class="font-black text-xl ">Ryuk</p>
+            <button onclick="openNav()" class="block sm:hidden">
+                  <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="hidden  sm:flex">
+                <li class="w-full text-center hover:bg-gray-200 rounded-lg py-3 px-5 transition-colors "><a href="">Home</a></li>
+                <li class="w-full text-center hover:bg-gray-200 rounded-lg py-3 px-5 transition-colors rounded-lg"><a href="">About</a> </li>
+                <li class="w-full text-center hover:bg-gray-200 rounded-lg py-3 px-5 transition-colors rounded-lg"><a href="">Contact</a> </li>
+                <li class="w-full text-center hover:bg-gray-200 rounded-lg py-3 px-5 transition-colors rounded-lg"><a href="">Gallery</a> </li>
+            </ul>  
+        </div>
+        <div class="link-div w-full absolute top-0  bg-gray-50 border text-xl realtive translate-x-full translate-all duration-700">
+           <button onclick="closeNav()"> <i class="fa-solid fa-x absolute text-2xl left-10 hover:bg-gray-200 p-2 px-4 rounded-full"></i></button>
+            <ul class="w-full flex items-center gap-4 flex-col pt-12">
+                <li class="w-full text-center hover:bg-gray-200 py-3 px-5 transition-colors"><a href="">Home</a></li>
+                <li class="w-full text-center hover:bg-gray-200 py-3 px-5 transition-colors"><a href="">About</a> </li>
+                <li class="w-full text-center hover:bg-gray-200 py-3 px-5 transition-colors"><a href="">Contact</a> </li>
+                <li class="w-full text-center hover:bg-gray-200 py-3 px-5 transition-colors"><a href="">Gallery</a> </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
